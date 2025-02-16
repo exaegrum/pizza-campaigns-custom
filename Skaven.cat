@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="231a-2a83-26f0-a718" name="Skaven" gameSystemId="e51d-b1a3-75fc-dc3g" gameSystemRevision="2" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="231a-2a83-26f0-a718" name="Skaven" gameSystemId="e51d-b1a3-75fc-dc3g" gameSystemRevision="2" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Battle Traits: Skaven" hidden="false" id="8205-6284-a94b-5c93" publicationId="40f6-9b64-7daa-d1c8">
       <profiles>
@@ -375,6 +375,26 @@ Start of Battle Round</characteristic>
               <attributes>
                 <attribute typeId="5a11-eab3-180c-ddf5" name="Color">Red</attribute>
                 <attribute typeId="6d16-c86b-2698-85a4" name="Type">Offensive</attribute>
+              </attributes>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Clade of Shadows" hidden="false" id="cc84-2086-15c1-33b2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40bc-ba18-8cfd-20f4"/>
+          </constraints>
+          <profiles>
+            <profile name="Shadows in the Sky" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="860e-37ed-8f7a-e657">
+              <characteristics>
+                <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), Your Movement Phase</characteristic>
+                <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick up to 3 friendly **^^Eshin^^** units where each model in that unit is within 1&quot; of any terrain features to be the targets.</characteristic>
+                <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Add 2” to the Move characteristic of the targets for the rest of the turn and the targets gain **^^Fly^^**for the rest of the turn.</characteristic>
+                <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"/>
+                <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+              </characteristics>
+              <attributes>
+                <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Gray</attribute>
+                <attribute name="Type" typeId="6d16-c86b-2698-85a4">Movement</attribute>
               </attributes>
             </profile>
           </profiles>
@@ -3148,6 +3168,155 @@ Start of Battle Round</characteristic>
           </conditions>
         </modifier>
       </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Ratling Gun" hidden="false" id="101d-2b71-c8a9-04ac" type="selectionEntry" targetId="536f-8a32-f991-c47a">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="74d6-aac6-649e-4b16" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7299-ee25-cfb7-621f" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d3e7-d46e-1989-7534" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="96e7-bdfc-d62-5b04" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="88c9-115c-3714-e884" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="a894-c0e3-2a4-79d0" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d81b-11e8-df5e-ec45" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="6d73-85ea-7f91-5baf" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="ecc8-7506-0ac3-ca80" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="5a48-e3a1-625c-dae1" shared="true"/>
+                  </conditions>
+                  <localConditionGroups>
+                    <localConditionGroup type="lessThan" value="1" scope="force" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="self" childId="c011-fb8c-500a-e727" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="self" childId="da36-ed81-79fe-ca75" shared="true"/>
+                      </conditions>
+                    </localConditionGroup>
+                  </localConditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="376a-6b97-8699-dd59" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="multiply" value="2" field="points">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1b37-82b8-c062-eb82" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Swiss Cheese Entrepreneurs" field="name"/>
+        <modifier type="increment" value="6" field="c6b5-908c-a604-1a98" affects="self.entries.forces.recursive.profiles.Ranged Weapon" scope="root-entry"/>
+        <modifier type="increment" value="2" field="fed0-d1b3-1bb8-c501" affects="self.entries.forces.recursive.profiles.Unit" scope="root-entry"/>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="6816-71bc-47a2-8b6b"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4665-d3aa-cb64-d972" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="6816-71bc-47a2-8b6b">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="force" childId="4700-6c86-cd5d-ed1b" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="74d6-aac6-649e-4b16" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d81b-11e8-df5e-ec45" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="6d73-85ea-7f91-5baf" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="5a48-e3a1-625c-dae1" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="376a-6b97-8699-dd59" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="170"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Reinforced" hidden="false" id="c74e-1bf3-3c78-43af" type="selectionEntry" targetId="1b37-82b8-c062-eb82">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c3b-b202-bd45-af89-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c3b-b202-bd45-af89-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Paths" hidden="false" id="654a-1490-88ef-65ba" type="selectionEntryGroup" targetId="9e59-94d3-7bfe-3534"/>
+        <entryLink import="true" name="Battle Wounds + Scars" hidden="false" id="0932-f426-7760-552b" type="selectionEntryGroup" targetId="462c-2914-b583-1688"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Gutter Runners" hidden="false" id="471c-be95-8884-b472" type="selectionEntry" targetId="d3a7-4e1b-3de7-d042">
+      <entryLinks>
+        <entryLink import="true" name="Reinforced" hidden="false" id="61fd-1f0a-e66c-75b0" type="selectionEntry" targetId="1b37-82b8-c062-eb82">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fec3-29b9-fc9f-05d4-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fec3-29b9-fc9f-05d4-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Paths" hidden="false" id="2fc7-12c4-50b2-0a1a" type="selectionEntryGroup" targetId="9e59-94d3-7bfe-3534"/>
+        <entryLink import="true" name="Battle Wounds + Scars" hidden="false" id="94a8-0a12-9c35-cb87" type="selectionEntryGroup" targetId="462c-2914-b583-1688"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="703-8991-676d-bf79" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7299-ee25-cfb7-621f" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d3e7-d46e-1989-7534" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="96e7-bdfc-d62-5b04" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="88c9-115c-3714-e884" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="181f-fa52-9a52-12bd" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="a894-c0e3-2a4-79d0" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="ecc8-7506-0ac3-ca80" shared="true"/>
+                  </conditions>
+                  <localConditionGroups>
+                    <localConditionGroup type="lessThan" value="1" scope="force" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="self" childId="c011-fb8c-500a-e727" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="self" childId="a2e1-6655-23f6-6533" shared="true"/>
+                      </conditions>
+                    </localConditionGroup>
+                  </localConditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="376a-6b97-8699-dd59" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="multiply" value="2" field="points">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1b37-82b8-c062-eb82" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="The Weeping Deathpack" field="name"/>
+        <modifier type="decrement" value="1" field="61c1-22cc-40af-2847" affects="self.entries.forces.recursive.profiles.Melee Weapon" scope="root-entry"/>
+        <modifier type="increment" value="2" field="fed0-d1b3-1bb8-c501" affects="self.entries.forces.recursive.profiles.Unit" scope="root-entry"/>
+      </modifiers>
+      <costs>
+        <cost name="pts" typeId="points" value="110"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3220-0524-108d-6907" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </entryLink>
   </entryLinks>
   <selectionEntries>

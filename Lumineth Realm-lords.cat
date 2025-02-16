@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="efc5-b8d-894c-67c6" name="Lumineth Realm-lords" gameSystemId="e51d-b1a3-75fc-dc3g" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="efc5-b8d-894c-67c6" name="Lumineth Realm-lords" gameSystemId="e51d-b1a3-75fc-dc3g" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Lumineth Realm-lords - Library" id="d926-b557-75fc-a880" targetId="f864-1661-71bb-41bb"/>
     <catalogueLink type="catalogue" name="Path to Glory - Ravaged Coast" id="7307-2927-c1aa-9df1" importRootEntries="true" targetId="a434-b1ba-922b-7624"/>
@@ -834,6 +834,7 @@ For the rest of the battle round, subtract 1 from hit rolls for attacks that ta
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="e5c5-abb9-481b-461e" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1d46-46e8-3a3c-9cfd" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="15bc-e9e7-ab76-49df" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="624d-cbd5-8822-d59b" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1094,6 +1095,7 @@ For the rest of the battle round, subtract 1 from hit rolls for attacks that ta
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="9caa-6acd-54b7-1ca7" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="e5c5-abb9-481b-461e" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1d46-46e8-3a3c-9cfd" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="624d-cbd5-8822-d59b" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1139,6 +1141,7 @@ For the rest of the battle round, subtract 1 from hit rolls for attacks that ta
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1d46-46e8-3a3c-9cfd" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="d33e-217b-3100-8f97" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="15bc-e9e7-ab76-49df" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="624d-cbd5-8822-d59b" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1208,6 +1211,7 @@ For the rest of the battle round, subtract 1 from hit rolls for attacks that ta
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="9caa-6acd-54b7-1ca7" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="e5c5-abb9-481b-461e" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1d46-46e8-3a3c-9cfd" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="624d-cbd5-8822-d59b" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1245,6 +1249,7 @@ For the rest of the battle round, subtract 1 from hit rolls for attacks that ta
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="4236-d226-99a7-18e9" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="2cfd-546b-46db-5798" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1d46-46e8-3a3c-9cfd" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="624d-cbd5-8822-d59b" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1282,6 +1287,7 @@ For the rest of the battle round, subtract 1 from hit rolls for attacks that ta
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="4236-d226-99a7-18e9" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="2cfd-546b-46db-5798" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1d46-46e8-3a3c-9cfd" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="624d-cbd5-8822-d59b" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1324,6 +1330,7 @@ For the rest of the battle round, subtract 1 from hit rolls for attacks that ta
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1d46-46e8-3a3c-9cfd" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="d33e-217b-3100-8f97" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="15bc-e9e7-ab76-49df" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="624d-cbd5-8822-d59b" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1362,6 +1369,7 @@ For the rest of the battle round, subtract 1 from hit rolls for attacks that ta
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1d46-46e8-3a3c-9cfd" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="d33e-217b-3100-8f97" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="15bc-e9e7-ab76-49df" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="624d-cbd5-8822-d59b" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1400,6 +1408,7 @@ For the rest of the battle round, subtract 1 from hit rolls for attacks that ta
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1d46-46e8-3a3c-9cfd" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="d33e-217b-3100-8f97" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="15bc-e9e7-ab76-49df" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="624d-cbd5-8822-d59b" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1446,6 +1455,7 @@ For the rest of the battle round, subtract 1 from hit rolls for attacks that ta
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1d46-46e8-3a3c-9cfd" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="d33e-217b-3100-8f97" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="15bc-e9e7-ab76-49df" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="624d-cbd5-8822-d59b" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1479,6 +1489,7 @@ For the rest of the battle round, subtract 1 from hit rolls for attacks that ta
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1d46-46e8-3a3c-9cfd" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="d33e-217b-3100-8f97" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="15bc-e9e7-ab76-49df" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="624d-cbd5-8822-d59b" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1524,6 +1535,7 @@ For the rest of the battle round, subtract 1 from hit rolls for attacks that ta
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1d46-46e8-3a3c-9cfd" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="d33e-217b-3100-8f97" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="15bc-e9e7-ab76-49df" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="624d-cbd5-8822-d59b" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1540,6 +1552,79 @@ For the rest of the battle round, subtract 1 from hit rolls for attacks that ta
       <entryLinks>
         <entryLink import="true" name="Battle Wounds + Scars" hidden="false" id="1841-3427-645e-c9c3" type="selectionEntryGroup" targetId="8248-f1f1-6202-dbe2"/>
       </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vanari Dawnriders" hidden="false" id="73ae-1e40-4afb-a224" type="selectionEntry" targetId="8f4-ae60-8a15-6d7d">
+      <entryLinks>
+        <entryLink import="true" name="Reinforced" hidden="false" id="02ca-91e9-24be-0375" type="selectionEntry" targetId="1b37-82b8-c062-eb82">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a459-925c-5fc6-90a4-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a459-925c-5fc6-90a4-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Battle Wounds + Scars" hidden="false" id="7555-7c89-0b35-8eca" type="selectionEntryGroup" targetId="8248-f1f1-6202-dbe2"/>
+        <entryLink import="true" name="Paths" hidden="false" id="7440-667b-17ad-bf22" type="selectionEntryGroup" targetId="4961-1291-10e2-b7ca"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="970e-5c77-322e-e83" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="9caa-6acd-54b7-1ca7" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="e5c5-abb9-481b-461e" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="1d46-46e8-3a3c-9cfd" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d33e-217b-3100-8f97" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="15bc-e9e7-ab76-49df" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="624d-cbd5-8822-d59b" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="376a-6b97-8699-dd59" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="multiply" value="2" field="points">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1b37-82b8-c062-eb82" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Corelli&apos;s Hounds" field="name"/>
+        <modifier type="replace" value="3" field="61c1-22cc-40af-2847" affects="self.entries.forces.recursive.profiles.Melee Weapon" arg="4" scope="root-entry"/>
+      </modifiers>
+      <costs>
+        <cost name="pts" typeId="points" value="230"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="252f-fe89-f3c0-c94e" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <rules>
+        <rule name="" id="2d27-cfc6-2602-919d" hidden="false">
+          <description>Once per battle, when the unit uses a command, no command points are spent to use that command.</description>
+        </rule>
+      </rules>
+    </entryLink>
+    <entryLink import="true" name="Lunasil Ablaze" hidden="false" id="624d-cbd5-8822-d59b" type="selectionEntry" targetId="d19-ee8b-af86-b163">
+      <categoryLinks>
+        <categoryLink name="Regimental Leader" hidden="false" id="cb0d-92f6-224a-6ca7" targetId="d1f3-921c-b403-1106" primary="true"/>
+        <categoryLink name="FLY" hidden="false" id="01bb-0a35-0528-81bb" targetId="b979-4c3e-7d0e-6921" primary="false"/>
+        <categoryLink name="WARMASTER" hidden="false" id="0726-b8e9-4af2-5700" targetId="c203-51a0-3d44-6b07" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="230"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Battle Wounds + Scars" hidden="false" id="e8c8-8a62-9ce7-0936" type="selectionEntryGroup" targetId="8248-f1f1-6202-dbe2"/>
+        <entryLink import="true" name="Artefacts of Power" hidden="false" id="4b5c-0bf7-cae6-e78d" type="selectionEntryGroup" targetId="f424-4edc-e0bc-60bc"/>
+        <entryLink import="true" name="Heroic Traits" hidden="false" id="ce00-469f-dd23-c37a" type="selectionEntryGroup" targetId="a340-462e-ac27-73f8"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="Lunasil Ablaze" field="name"/>
+        <modifier type="increment" value="2" field="96be-54ae-ce7b-10b7" affects="profiles.Unit"/>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <categoryEntries>

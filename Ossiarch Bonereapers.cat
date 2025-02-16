@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="8e0e-5e8c-5824-89c9" name="Ossiarch Bonereapers" gameSystemId="e51d-b1a3-75fc-dc3g" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="8e0e-5e8c-5824-89c9" name="Ossiarch Bonereapers" gameSystemId="e51d-b1a3-75fc-dc3g" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="true" name="Mortisan Boneshaper" hidden="false" type="selectionEntry" id="98ea-c546-1ea7-7194" targetId="13ec-ca46-9e71-ad2">
       <modifiers>
@@ -896,6 +896,72 @@
       <entryLinks>
         <entryLink import="true" name="Battle Wounds + Scars" hidden="false" id="409d-fe7f-4174-b30f" type="selectionEntryGroup" targetId="6fa6-ec1d-cf81-982d" collapsible="false"/>
       </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mortek Crawler" hidden="false" id="3d9b-86cc-fbdb-1981" type="selectionEntry" targetId="8073-6b0a-5c59-fb6">
+      <categoryLinks>
+        <categoryLink name="WARD (6+)" hidden="false" id="0972-60d2-4840-59ed" targetId="70a4-383f-421f-52cd" primary="false"/>
+        <categoryLink name="OSSIARCH BONEREAPERS" hidden="false" id="9ff3-390f-8752-eda2" targetId="5603-d1-a021-331e" primary="false"/>
+        <categoryLink name="DEATH" hidden="false" id="4825-65a6-41e9-d1dd" targetId="d484-a2d7-cf4f-c4a0" primary="false"/>
+        <categoryLink name="WAR MACHINE" hidden="false" id="38ca-d66c-9fcd-5716" targetId="f7bc-b618-4b5d-2bae" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="f251-90be-5e0d-e76e" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d622-6a8f-a4-9f14" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="4587-ae29-90ef-4bbb" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dbe5-2c39-2d83-5bde" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="c3eb-a11c-f7fa-2cfb" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="b55b-62e8-e8fe-88c7" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="a808-e9cc-f583-1bb8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="376a-6b97-8699-dd59" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="0488-7c7c-acfe-7bad">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a808-e9cc-f583-1bb8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="376a-6b97-8699-dd59" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="Hordebreaker" field="name"/>
+        <modifier type="set" value="Shoot in Combat" field="d793-3dd7-9c13-741e" affects="profiles.Ranged Weapon"/>
+      </modifiers>
+      <costs>
+        <cost name="pts" typeId="points" value="260"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="0488-7c7c-acfe-7bad"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f3d1-1e2e-498c-e6d8" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Paths" hidden="false" id="9da8-dd1d-d833-7682" type="selectionEntryGroup" targetId="70cc-ca33-377e-3078"/>
+        <entryLink import="true" name="Battle Wounds + Scars" hidden="false" id="bf28-a465-a608-6708" type="selectionEntryGroup" targetId="6fa6-ec1d-cf81-982d" collapsible="false"/>
+      </entryLinks>
+      <rules>
+        <rule name="" id="6572-30eb-7e4d-f111" hidden="false">
+          <description>Once per battle, when the unit uses a command, no command points are spent to use that command.</description>
+        </rule>
+      </rules>
     </entryLink>
   </entryLinks>
   <catalogueLinks>
