@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="7589-6d2-dadc-bc6" name="Maggotkin of Nurgle - Library" gameSystemId="e51d-b1a3-75fc-dc3g" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="7589-6d2-dadc-bc6" name="Maggotkin of Nurgle - Library" gameSystemId="e51d-b1a3-75fc-dc3g" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Horticulous Slimux" hidden="false" id="6393-ad97-81d9-ccbe" publicationId="9c71-86cb-e1d0-ec8d">
       <constraints>
@@ -2981,6 +2981,1065 @@ At the end of the battle round, any unspent **tally points** are lost.</characte
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Toad Dragon" hidden="false" id="370b-4303-62ae-dc48" publicationId="c3ad-6aa4-5bc1-53ef">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7f20-7327-310a-8e77" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="General" hidden="false" id="0157-b529-917f-f8f1" type="selectionEntry" targetId="a56b-952e-ad15-7868"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Battle Damaged" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="286b-cf06-bd39-e0a0">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">While this unit has 10 or more damage points, the Attacks characteristic of its ** Crushing Jaws** is 3.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="50fe-4f29-6bc3-dcc6" name="Color">Black</attribute>
+            <attribute typeId="bf11-4e10-3ab1-06f4" name="Type">Damage</attribute>
+          </attributes>
+        </profile>
+        <profile name="Toad Dragon" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false" id="9fda-1c90-97a0-4a43">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">16</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unspeakable Foulness" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="b0a0-34a3-a4f2-6178">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">While an enemy unit is in combat with this unit, subtract 1 from wound rolls made by that unit.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="50fe-4f29-6bc3-dcc6">Green</attribute>
+            <attribute name="Type" typeId="bf11-4e10-3ab1-06f4">Defensive</attribute>
+          </attributes>
+        </profile>
+        <profile name="Pestilent Battering Ram" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="2515-e1e6-64b1-75e5">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), Any Charge Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">If this unit charged this phase, pick a visible enemy unit within 1” of it to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f">**^^Rampage^^**</characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Purple</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Movement</attribute>
+          </attributes>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="CHAOS" hidden="false" id="5ba3-3537-5ac9-c7af" targetId="319b-38ee-d10d-e800" primary="false"/>
+        <categoryLink name="MAGGOTKIN OF NURGLE" hidden="false" id="d195-4a97-7304-0317" targetId="ca3c-6c3b-4887-3a9d" primary="false"/>
+        <categoryLink name="MONSTER" hidden="false" id="f7b4-48d2-9696-92be" targetId="6d54-625c-d063-13e2" primary="true"/>
+        <categoryLink name="WARD (5+)" hidden="false" id="4b6c-eaae-061b-e422" targetId="52cc-95fd-6cd3-8f72" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Toad Dragon" hidden="false" id="5318-71b3-8976-87ec">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Lashing Tongue" hidden="false" id="ead7-2eab-1e62-155f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98ba-0431-ed33-13fa"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bebc-4630-34cd-34a2"/>
+              </constraints>
+              <profiles>
+                <profile name="Lashing Tongue" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false" id="1abc-3aed-fded-e884">
+                  <characteristics>
+                    <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">12&quot;</characteristic>
+                    <characteristic name="Atk" typeId="aa17-4296-2887-e05d">1</characteristic>
+                    <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+                    <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+                    <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+                    <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">D3+3</characteristic>
+                    <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat, Companion</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Crushing Jaws" hidden="false" id="9986-a38c-e459-3739">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc0a-2e19-91fa-c05f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00e8-affd-1569-ac8f"/>
+              </constraints>
+              <profiles>
+                <profile name="Crushing Jaws" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="22db-bdf5-8edc-f4c1">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">5</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">2+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">2</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">D3+3</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="5919-a55c-68dd-dbdb"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f5fd-5f0e-5549-affb"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Kazyk the Befouled" hidden="false" id="f2a3-afe8-3c93-d88d" publicationId="c3ad-6aa4-5bc1-53ef">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="13b1-e796-5a2c-fa48" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="General" hidden="false" id="3f87-b3c7-26fa-8770" type="selectionEntry" targetId="a56b-952e-ad15-7868"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Storm of Decay" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="ae3b-ef5b-0a13-ba69">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">The **Anti-Charge (+1 Rend)** weapon ability has no effect for attacks made by units in combat with this unit.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="50fe-4f29-6bc3-dcc6">Green</attribute>
+            <attribute name="Type" typeId="bf11-4e10-3ab1-06f4">Defensive</attribute>
+          </attributes>
+        </profile>
+        <profile name="Kazyk the Befouled" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false" id="57ba-583e-809c-ee13">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">7</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ultimate Riders" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="bf3c-b846-9e71-7d74">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Reaction: You declared a FIGHT ability for this unit</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"/>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Pick a friendly **Rot Knights** unit that has not used a **^^Fight^^** ability this turn and is within this unit’s combat range to be the target. The target can be picked to use a **^^Fight^^** ability immediately after the **^^Fight^^**  ability used by this unit has been resolved.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"/>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Red</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Offensive</attribute>
+          </attributes>
+        </profile>
+        <profile name="The Wasting Sickness" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="e8b7-7d2b-608e-4072">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn, Reaction: Opponent declared a non-**^^Core^^** ability for a unit in combat with this unit and this unit charged this turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"/>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 4+, that ability has no effect.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"/>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Red</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Special</attribute>
+          </attributes>
+        </profile>
+        <profile name="Rot Beast Vigour" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="e170-de57-5c55-2992">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">When this unit uses the ‘Power Through’ command, the target does not have to have a lower Health characteristic than this unit.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="50fe-4f29-6bc3-dcc6">Purple</attribute>
+            <attribute name="Type" typeId="bf11-4e10-3ab1-06f4">Movement</attribute>
+          </attributes>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="HERO" hidden="false" id="195c-8ff2-edc1-7cff" targetId="6e72-1656-d554-528a" primary="true"/>
+        <categoryLink name="UNIQUE" hidden="false" id="40cc-5455-a2bf-204c" targetId="72ce-2188-70bf-2dbd" primary="false"/>
+        <categoryLink name="CHAOS" hidden="false" id="4c37-c747-1378-3284" targetId="319b-38ee-d10d-e800" primary="false"/>
+        <categoryLink name="MAGGOTKIN OF NURGLE" hidden="false" id="cc80-9688-c230-6a58" targetId="ca3c-6c3b-4887-3a9d" primary="false"/>
+        <categoryLink name="WARD (5+)" hidden="false" id="ca3c-40fb-27a5-6358" targetId="52cc-95fd-6cd3-8f72" primary="false"/>
+        <categoryLink name="ROTBRINGERS" hidden="false" id="5884-da3b-8a9a-374a" targetId="b665-bb9e-c89c-ad7d" primary="false"/>
+        <categoryLink name="CAVALRY" hidden="false" id="4340-c19a-ee40-1ec8" targetId="926c-df8c-6841-d49e" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Kazyk the Befouled" hidden="false" id="d07f-9880-ada7-82ed">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sword of Filth" hidden="false" id="0290-3dae-9ede-2da2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2db9-e060-a2b0-fb09"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7304-0f93-c423-c413"/>
+              </constraints>
+              <profiles>
+                <profile name="Sword of Filth" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="6a70-9cd8-da78-5a2c">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">5</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Charge (+1 Damage)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rot Beast’s Fangs and Claws" hidden="false" id="63fc-1356-9823-64ed">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b7c9-9e91-1215-3d8f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c88-2ac0-16af-a3df"/>
+              </constraints>
+              <profiles>
+                <profile name="Rot Beast’s Fangs and Claws" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="f99b-9792-6570-7117">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1ecd-b8bc-9f70-32a5"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6844-3bd6-d654-99a1"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tamurkhan the Maggot Lord" hidden="false" id="22e7-5e4e-06e4-c687" publicationId="c3ad-6aa4-5bc1-53ef">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="06b8-46e6-5213-50c8" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="General" hidden="false" id="88f2-f2e7-fdd4-bfd6" type="selectionEntry" targetId="a56b-952e-ad15-7868"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Battle Damaged" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="fcc4-1770-b9e2-d580">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">While this unit has 10 or more damage points, the Attacks characteristic of **Bubebolos’s Crushing Jaws** is 3.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="50fe-4f29-6bc3-dcc6" name="Color">Black</attribute>
+            <attribute typeId="bf11-4e10-3ab1-06f4" name="Type">Damage</attribute>
+          </attributes>
+        </profile>
+        <profile name="Tamurkhan the Maggot Lord" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false" id="2fd1-be79-ea1d-4221">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">22</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Feast of the Maggot Lord" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="9d8d-414c-ad89-0615">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">If this unit would be destroyed, before removing it from the battlefield, pick one enemy **^^Hero^^** within combat range to be the target. Inflict D6 mortal damage on the target. If this mortal damage causes the target to be destroyed, this unit is not destroyed and any remaining damage points inflicted on it have no effect. Then, **Heal (X)**, where **X** is the Health characteristic of the target.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="50fe-4f29-6bc3-dcc6">Green</attribute>
+            <attribute name="Type" typeId="bf11-4e10-3ab1-06f4">Defensive</attribute>
+          </attributes>
+        </profile>
+        <profile name="Devastating Wake" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="ad76-ae13-8afa-ee7f">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), Reaction: You declared the ‘Power Through’ command for this unit</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"/>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Pick up to 2 friendly **^^Maggotkin of Nurgle^^** units wholly within 12&quot; of this unit to be the targets. After the ‘Power Through’ command for this unit has been resolved, each of the targets can immediately use the ‘Power Through’ command in an order of your choosing without any command points being spent.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f">**^^Rampage^^**</characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Purple</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Movement</attribute>
+          </attributes>
+        </profile>
+        <profile name="The Black Cleaver" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="8c0c-652c-84a1-ffea">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Each time this unit uses a **^^Fight^^** ability, if any damage from attacks made by **The Black Cleaver** is allocated to a unit, after that **^^Fight^^** ability has been resolved, subtract 1 from save rolls for that unit for the rest of the game.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="50fe-4f29-6bc3-dcc6">Red</attribute>
+            <attribute name="Type" typeId="bf11-4e10-3ab1-06f4">Offensive</attribute>
+          </attributes>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="HERO" hidden="false" id="81b5-678a-a862-f704" targetId="6e72-1656-d554-528a" primary="true"/>
+        <categoryLink name="UNIQUE" hidden="false" id="c806-9709-b509-8d6f" targetId="72ce-2188-70bf-2dbd" primary="false"/>
+        <categoryLink name="CHAOS" hidden="false" id="9ef2-231a-5361-5294" targetId="319b-38ee-d10d-e800" primary="false"/>
+        <categoryLink name="MAGGOTKIN OF NURGLE" hidden="false" id="90da-4f22-5d41-dedd" targetId="ca3c-6c3b-4887-3a9d" primary="false"/>
+        <categoryLink name="MONSTER" hidden="false" id="5397-df0f-7def-48dc" targetId="6d54-625c-d063-13e2" primary="false"/>
+        <categoryLink name="WARD (5+)" hidden="false" id="fa04-e0de-44c9-d208" targetId="52cc-95fd-6cd3-8f72" primary="false"/>
+        <categoryLink name="ROTBRINGERS" hidden="false" id="f8f2-cee8-71d6-b83e" targetId="b665-bb9e-c89c-ad7d" primary="false"/>
+        <categoryLink name="WARMASTER" hidden="false" id="9c6f-7770-1278-3981" targetId="c203-51a0-3d44-6b07" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tamurkhan the Maggot Lord" hidden="false" id="a104-cdb6-79f9-a8b9">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Buebolos&apos;s Lashing Tongue" hidden="false" id="e856-56bd-7fa0-f4ea">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e24-f6c8-0364-6a83"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1eb6-7cac-e47b-9f9f"/>
+              </constraints>
+              <profiles>
+                <profile name="Buebolos&apos;s Lashing Tongue" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false" id="bc89-41b3-aed6-3b52">
+                  <characteristics>
+                    <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">12&quot;</characteristic>
+                    <characteristic name="Atk" typeId="aa17-4296-2887-e05d">1</characteristic>
+                    <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+                    <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+                    <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+                    <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">D3+3</characteristic>
+                    <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat, Companion</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Black Cleaver" hidden="false" id="e23f-b1ed-1152-f26f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1162-d8bc-423f-b1eb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="783c-0cfb-2f72-ae8f"/>
+              </constraints>
+              <profiles>
+                <profile name="The Black Cleaver" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="289c-c45b-dfe9-21fc">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">5</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">2+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">2</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Charge (+1 Damage), Anti-**^^Hero^^** (+1 Rend)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bubebolos’s Crushing Jaws" hidden="false" id="7b33-1f94-1266-f608">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6f0-2096-a463-ae70"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3f6-bf07-5e77-fabe"/>
+              </constraints>
+              <profiles>
+                <profile name="Bubebolos’s Crushing Jaws" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="379e-f1ab-4443-6e3c">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">5</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">2+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">2</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">D3+3</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="2a3b-a137-aec8-087e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bfde-0695-5cef-2eae"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rot Knights" hidden="false" id="a401-ef94-3cc0-0eac" publicationId="c3ad-6aa4-5bc1-53ef">
+      <profiles>
+        <profile name="Rot Knights" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false" id="7518-b31f-e4ff-f269">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">3</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rotting Wounds" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="dfea-ce35-6bc4-b994">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick one enemy unit that had any damage allocated to it by this unit this turn.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 3+, until the start of your next turn, subtract 2” from the target’s Move characteristic, and subtract 1 from the number of dice rolled when making charge rolls for the target, to a minimum of 1.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"/>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Purple</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Special</attribute>
+          </attributes>
+        </profile>
+        <profile name="Rot Beast Vigour" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="ffa7-fc8f-0f1e-6eab">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">When this unit uses the ‘Power Through’ command, the target does not have to have a lower Health characteristic than this unit.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="50fe-4f29-6bc3-dcc6">Purple</attribute>
+            <attribute name="Type" typeId="bf11-4e10-3ab1-06f4">Movement</attribute>
+          </attributes>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="WARD (5+)" hidden="false" id="7d58-5ddc-165b-9b17" targetId="52cc-95fd-6cd3-8f72" primary="false"/>
+        <categoryLink name="CHAOS" hidden="false" id="9ac1-7e34-edd4-8fd6" targetId="319b-38ee-d10d-e800" primary="false"/>
+        <categoryLink name="MAGGOTKIN OF NURGLE" hidden="false" id="628a-d761-6c89-37c5" targetId="ca3c-6c3b-4887-3a9d" primary="false"/>
+        <categoryLink name="CAVALRY" hidden="false" id="2aeb-fdd3-6554-ae8d" targetId="926c-df8c-6841-d49e" primary="true"/>
+        <categoryLink name="CHAMPION" hidden="false" id="816a-ea79-fb17-38b6" targetId="f679-3bcb-d664-9ac3" primary="false"/>
+        <categoryLink name="ROTBRINGERS" hidden="false" id="81af-5dcc-c8e4-03d5" targetId="b665-bb9e-c89c-ad7d" primary="false"/>
+        <categoryLink name="MUSICIAN (1/5)" hidden="false" id="67c2-fbf4-a13b-3eea" targetId="dd6f-27e9-b16e-24ee" primary="false"/>
+        <categoryLink name="STANDARD BEARER (1/5)" hidden="false" id="2b80-f17f-2c8a-ba55" targetId="73c-8e22-9dde-f97" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‎" id="4e41-9394-0e6e-54b9" hidden="false" typeId="1dd2-2af7-76a2-2423" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Rot Knight" hidden="false" id="ce6b-59bf-ffa7-bb0a" defaultAmount="1,1,1, 2">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7120-373a-bec8-8b11"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a10f-80f4-5d59-70fa"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rot Lance" hidden="false" id="88bb-cd3a-632b-02c2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b791-b569-2a84-791e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3a3-3d1a-b307-9d58"/>
+              </constraints>
+              <profiles>
+                <profile name="Rot Lance" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="3fed-d933-29d2-ddd5">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Charge (+1 Damage), Anti-**^^Cavalry^^** (+1 Rend)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rot Beasts&apos; Fangs and Claws" hidden="false" id="8472-b0e0-8566-523e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc04-77b1-9819-d8ab"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4149-f7bc-4620-3f42"/>
+              </constraints>
+              <profiles>
+                <profile name="Rot Beast’s Fangs and Claws" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="cb35-3d67-380c-f6d6">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="increment" value="3" field="7120-373a-bec8-8b11">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="a401-ef94-3cc0-0eac" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="3" field="a10f-80f4-5d59-70fa">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="a401-ef94-3cc0-0eac" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command Models" id="ed34-fb6d-88c3-4ec5" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae59-1d5b-a2e1-7f35" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Standard Bearer" hidden="false" id="13e2-9c3f-b21e-0899" type="selectionEntry" targetId="7f34-77c9-597-62c3" defaultAmount="0,0,1,0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="a401-ef94-3cc0-0eac" shared="true" id="161e-903a-5815-8554" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e939-8a83-5f7f-5839"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="161e-903a-5815-8554">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="a401-ef94-3cc0-0eac" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Musician" hidden="false" id="3b20-68e1-8185-dc8c" type="selectionEntry" targetId="2475-183b-3802-4431" defaultAmount="0,1,0,0">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="42c4-8dcd-f582-88a0">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="a401-ef94-3cc0-0eac" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="a401-ef94-3cc0-0eac" shared="true" id="42c4-8dcd-f582-88a0" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bf4-c8e2-b074-4ec6"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Champion" hidden="false" id="795b-149a-b590-8e7e" type="selectionEntry" targetId="9c21-1746-9873-a5b5" defaultAmount="1,0,0,0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="547e-46ab-c366-c33c"/>
+                    <constraint type="max" value="1" field="selections" scope="a401-ef94-3cc0-0eac" shared="true" id="ca66-e363-f8c2-460c" includeChildSelections="true"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Pestigors" hidden="false" id="f276-0f0f-0b04-72e9" publicationId="c3ad-6aa4-5bc1-53ef">
+      <profiles>
+        <profile name="Pestigors" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false" id="f506-bfd5-07dc-9361">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Flanking Force" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="1227-84e6-c897-b446">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Deployment Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"/>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">This unit can use the ‘Run’ ability as if it were your movement phase.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"/>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Black</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Movement</attribute>
+          </attributes>
+        </profile>
+        <profile name="Tend the Gardens" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="513f-c4a2-994d-63ae">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">While this unit is wholly within 3” of a terrain feature, it cannot be targeted by shooting attacks.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="50fe-4f29-6bc3-dcc6" name="Color">Green</attribute>
+            <attribute typeId="bf11-4e10-3ab1-06f4" name="Type">Defensive</attribute>
+          </attributes>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="WARD (5+)" hidden="false" id="693a-9493-e732-f418" targetId="52cc-95fd-6cd3-8f72" primary="false"/>
+        <categoryLink name="CHAOS" hidden="false" id="535d-310b-d661-93e9" targetId="319b-38ee-d10d-e800" primary="false"/>
+        <categoryLink name="MAGGOTKIN OF NURGLE" hidden="false" id="8ec1-5e56-179c-749f" targetId="ca3c-6c3b-4887-3a9d" primary="false"/>
+        <categoryLink name="CHAMPION" hidden="false" id="41ce-1901-5a1c-4d39" targetId="f679-3bcb-d664-9ac3" primary="false"/>
+        <categoryLink name="INFANTRY" hidden="false" id="4baf-e3b2-3c50-b7cb" targetId="75d6-6995-dfcc-3898" primary="true"/>
+        <categoryLink name="STANDARD BEARER (1/10)" hidden="false" id="d7ca-ec79-e918-dafa" targetId="1f17-ad98-ada0-ccf" primary="false"/>
+        <categoryLink name="MUSICIAN (1/10)" hidden="false" id="c697-4c24-9097-ffa6" targetId="eeed-ef77-b0d-fa9d" primary="false"/>
+        <categoryLink name="ROTBRINGERS" hidden="false" id="4c18-17d7-cd4f-2865" targetId="b665-bb9e-c89c-ad7d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‎" id="3a6c-7921-1d99-f6de" hidden="false" typeId="1dd2-2af7-76a2-2423" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Pestigor" hidden="false" id="704d-d5e7-8dda-1adf" defaultAmount="1,1,1,7">
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="0248-ebb7-00dd-232f"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="6bd6-37f4-0783-0f0e"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Plague Blessed Axes" hidden="false" id="8ed8-8a0d-9a77-4b25">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7264-e304-c96c-69d1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e63-0024-b0f1-c843"/>
+              </constraints>
+              <profiles>
+                <profile name="Plague Blessed Axes" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="6be6-ba92-e0fe-a6e6">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="increment" value="10" field="0248-ebb7-00dd-232f">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="f276-0f0f-0b04-72e9" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="10" field="6bd6-37f4-0783-0f0e">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="f276-0f0f-0b04-72e9" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command Models" id="8e22-12e8-a7ff-da1c" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="491c-6737-cd61-d74f" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Standard Bearer" hidden="false" id="f771-1634-c82a-f19d" type="selectionEntry" targetId="7f34-77c9-597-62c3" defaultAmount="0,0,1,0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="f276-0f0f-0b04-72e9" shared="true" id="640c-78f1-c027-c7da" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2f1-c15a-5f94-9584"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="640c-78f1-c027-c7da">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="f276-0f0f-0b04-72e9" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Musician" hidden="false" id="cd86-720a-53b7-12ed" type="selectionEntry" targetId="2475-183b-3802-4431" defaultAmount="0,1,0,0">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="3631-b33a-4318-c92f">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="f276-0f0f-0b04-72e9" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="f276-0f0f-0b04-72e9" shared="true" id="3631-b33a-4318-c92f" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5846-0bdb-0fe6-c38e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Champion" hidden="false" id="0043-c14b-62b5-b25f" type="selectionEntry" targetId="9c21-1746-9873-a5b5" defaultAmount="1,0,0,0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="f276-0f0f-0b04-72e9" shared="true" id="3838-097c-7473-082e" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34dd-70d8-a451-03c3"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Plague Ogors" hidden="false" id="891b-3f60-04e9-19ea" publicationId="c3ad-6aa4-5bc1-53ef">
+      <profiles>
+        <profile name="Plague Ogors" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false" id="d9e5-6fcc-0352-37c0">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">D6+4&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">5</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Insatiably Famished" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="7935-85ba-3b2f-e7b8">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit in combat with this unit to be the target</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a D3. On a 2+, **Heal (X)** where **X** is an amount equal to the roll, then inflict an amount of mortal damage on the target equal to the roll.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"/>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Purple</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Special</attribute>
+          </attributes>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="WARD (5+)" hidden="false" id="b156-8219-ccb4-8639" targetId="52cc-95fd-6cd3-8f72" primary="false"/>
+        <categoryLink name="CHAOS" hidden="false" id="1d46-f9b3-c93a-e423" targetId="319b-38ee-d10d-e800" primary="false"/>
+        <categoryLink name="MAGGOTKIN OF NURGLE" hidden="false" id="6767-82d4-61f0-1bc8" targetId="ca3c-6c3b-4887-3a9d" primary="false"/>
+        <categoryLink name="INFANTRY" hidden="false" id="0dd6-ac41-84e3-29b5" targetId="75d6-6995-dfcc-3898" primary="true"/>
+        <categoryLink name="ROTBRINGERS" hidden="false" id="6685-515c-d783-8e31" targetId="b665-bb9e-c89c-ad7d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‎" id="2a20-43d2-ae27-0f48" hidden="false" typeId="1dd2-2af7-76a2-2423" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Plague Ogor" hidden="false" id="5f48-029f-71cb-9906" defaultAmount="3">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="e0c0-c71b-569a-609a"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3154-4472-314e-c021"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Corroded Weapons" hidden="false" id="b9b1-89fe-a996-b786">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b02e-ba59-0491-2629"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0613-c4c0-0802-c856"/>
+              </constraints>
+              <profiles>
+                <profile name="Corroded Weapons" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="b514-12ed-c7eb-5dea">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">4</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">2+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">3</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="increment" value="3" field="e0c0-c71b-569a-609a">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="891b-3f60-04e9-19ea" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="3" field="3154-4472-314e-c021">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="891b-3f60-04e9-19ea" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Plague Toads" hidden="false" id="8542-bfb1-aeef-e432" publicationId="c3ad-6aa4-5bc1-53ef">
+      <profiles>
+        <profile name="Plague Toads" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false" id="f6b6-fbba-fc85-8a1e">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">D6+4&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">3</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Disgusting Maw" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="cba3-1564-df83-a5de">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Shooting Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit that has a Health characteristic of 3 or less and had any damage points allocated to it this turn by attacks made with this unit&apos;s **Lashing Tongues** to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. If the roll exceeds the target’s Heath characteristic:
+•  1 model in the target unit is slain.
+•  Ignore the effect of the ‘Beast’ ability on this unit for the rest of the turn.
+•  Add a number equal to the target’s Health characteristic to this unit’s control score for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"/>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Blue</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Special</attribute>
+          </attributes>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="WARD (5+)" hidden="false" id="ada7-ac6f-286c-ca8b" targetId="52cc-95fd-6cd3-8f72" primary="false"/>
+        <categoryLink name="CHAOS" hidden="false" id="5299-584f-9615-af3b" targetId="319b-38ee-d10d-e800" primary="false"/>
+        <categoryLink name="MAGGOTKIN OF NURGLE" hidden="false" id="bdfc-43d9-14b5-ca60" targetId="ca3c-6c3b-4887-3a9d" primary="false"/>
+        <categoryLink name="DAEMON" hidden="false" id="0119-2bee-958c-3fbc" targetId="dc0b-e417-51f4-10f0" primary="false"/>
+        <categoryLink name="FLY" hidden="false" id="0567-cc59-609b-867a" targetId="b979-4c3e-7d0e-6921" primary="false"/>
+        <categoryLink name="BEAST" hidden="false" id="067d-505c-66e2-0209" targetId="b224-8c8e-ca93-9860" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‎" id="22f5-31b7-0450-8e2f" hidden="false" typeId="1dd2-2af7-76a2-2423" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Plague Toad" hidden="false" id="69b7-269e-a18e-5568" defaultAmount="3">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="ec6f-2d03-9329-7c11"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ac83-257a-5486-883b"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Yawning Maw" hidden="false" id="4925-a778-926b-3bdd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="efe4-7d53-f9be-ec74"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa7a-25bc-8724-a9fe"/>
+              </constraints>
+              <profiles>
+                <profile name="Yawning Maw" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="8908-f65e-50a7-3f71">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">D3</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lashing Tongue" hidden="false" id="2541-e821-7c8d-d0a8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd38-baee-73f2-3796"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcbb-6bf7-9c40-0d38"/>
+              </constraints>
+              <profiles>
+                <profile name="Lashing Tongue" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false" id="5d49-d240-7c5d-32c4">
+                  <characteristics>
+                    <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">7&quot;</characteristic>
+                    <characteristic name="Atk" typeId="aa17-4296-2887-e05d">1</characteristic>
+                    <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+                    <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+                    <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+                    <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">D3</characteristic>
+                    <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat, Companion</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="increment" value="3" field="ec6f-2d03-9329-7c11">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="8542-bfb1-aeef-e432" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="3" field="ac83-257a-5486-883b">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="8542-bfb1-aeef-e432" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Beast" id="966d-4fee-c5bd-cf07" hidden="false" type="profile" targetId="8e01-c681-8a44-8f44"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Bile Troggoths" hidden="false" id="d562-27e4-8232-d752" publicationId="c3ad-6aa4-5bc1-53ef">
+      <profiles>
+        <profile name="Bile Troggoths" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false" id="3008-3d1e-18c6-2978">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">4&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">5</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Noxious Vomit" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="6b2c-8244-f589-9826">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">If any damage points are allocated to an enemy unit by attacks made with this unit’s **Noxious Vomit**, that unit is **drenched in vomit** until the start of your next turn.
+While a unit is **drenched in vomit**:
+•  Subtract 1 from save rolls for that unit. 
+•  Ignore positive modifiers to save rolls for that unit.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Blue</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Special</attribute>
+          </attributes>
+        </profile>
+        <profile name="Fecund Regrowth" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="5f9a-f5e3-4236-8722">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Start of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"/>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">**Heal (1)** this unit.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"/>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="WARD (5+)" hidden="false" id="ca52-a126-ff80-24fc" targetId="52cc-95fd-6cd3-8f72" primary="false"/>
+        <categoryLink name="CHAOS" hidden="false" id="f690-e9eb-1e1a-4e1b" targetId="319b-38ee-d10d-e800" primary="false"/>
+        <categoryLink name="MAGGOTKIN OF NURGLE" hidden="false" id="f248-8963-2b85-7146" targetId="ca3c-6c3b-4887-3a9d" primary="false"/>
+        <categoryLink name="INFANTRY" hidden="false" id="ccb6-6722-4ebc-03b7" targetId="75d6-6995-dfcc-3898" primary="true"/>
+        <categoryLink name="ROTBRINGERS" hidden="false" id="d3da-ee98-a999-d25d" targetId="b665-bb9e-c89c-ad7d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‎" id="6695-c53b-9538-1d8b" hidden="false" typeId="1dd2-2af7-76a2-2423" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Bile Troggoth" hidden="false" id="8578-a7d2-fa7b-b0e2" defaultAmount="3">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="01e1-a1d1-3cad-070f"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="42a2-d5ad-22b3-5214"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Noxious Vomit" hidden="false" id="0d2d-ae33-70a3-a408">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a911-4c71-a0fc-b9ce"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fc6-64a1-204f-a187"/>
+              </constraints>
+              <profiles>
+                <profile name="Noxious Vomit" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false" id="9460-62ff-9627-df47">
+                  <characteristics>
+                    <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">6&quot;</characteristic>
+                    <characteristic name="Atk" typeId="aa17-4296-2887-e05d">D3</characteristic>
+                    <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">2+</characteristic>
+                    <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+                    <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">2</characteristic>
+                    <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+                    <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rusted Axes and Cleavers" hidden="false" id="88b2-f39f-6734-631e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1d6-7da8-b3ba-dc10"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5eb-147e-8805-5b29"/>
+              </constraints>
+              <profiles>
+                <profile name="Rusted Axes and Cleavers" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="1c04-db8c-feef-d375">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">4</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">2+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="increment" value="3" field="01e1-a1d1-3cad-070f">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d562-27e4-8232-d752" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="3" field="42a2-d5ad-22b3-5214">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d562-27e4-8232-d752" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Pox Riders" hidden="false" id="82cb-c719-dafe-9a73" publicationId="c3ad-6aa4-5bc1-53ef">
+      <profiles>
+        <profile name="Pox Riders" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false" id="8420-f4f3-f3f8-e922">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">D6+4&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">5</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Disgusting Maw" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="35de-b2ee-a54c-5f8c">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Shooting Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit that has a Health characteristic of 3 or less and had any damage points allocated to it this turn by attacks made with this unit&apos;s **Lashing Tongues** to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. If the roll exceeds the target’s Heath characteristic:
+•  1 model in the target unit is slain.
+•  Ignore the effect of the ‘Beast’ ability on this unit for the rest of the turn.
+•  Add a number equal to the target’s Health characteristic to this unit’s control score for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"/>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Blue</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Special</attribute>
+          </attributes>
+        </profile>
+        <profile name="Deadly Rollick" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="ed3a-2e9c-ee7b-562b">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Charge Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">If this unit charged this turn, pick a visible enemy unit within 1” of it to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"/>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Orange</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Offensive</attribute>
+          </attributes>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="WARD (5+)" hidden="false" id="35ef-c16a-566a-e8c7" targetId="52cc-95fd-6cd3-8f72" primary="false"/>
+        <categoryLink name="CHAOS" hidden="false" id="6328-9acb-e414-c0ee" targetId="319b-38ee-d10d-e800" primary="false"/>
+        <categoryLink name="MAGGOTKIN OF NURGLE" hidden="false" id="04ee-7025-04c7-e29d" targetId="ca3c-6c3b-4887-3a9d" primary="false"/>
+        <categoryLink name="DAEMON" hidden="false" id="e3de-3738-0c55-0f81" targetId="dc0b-e417-51f4-10f0" primary="false"/>
+        <categoryLink name="FLY" hidden="false" id="460f-2cfb-d1a2-aa13" targetId="b979-4c3e-7d0e-6921" primary="false"/>
+        <categoryLink name="CAVALRY" hidden="false" id="f6e1-4157-f209-1be2" targetId="926c-df8c-6841-d49e" primary="true"/>
+        <categoryLink name="CHAMPION" hidden="false" id="5dde-1b08-8e7b-250f" targetId="f679-3bcb-d664-9ac3" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‎" id="f890-dc35-2eb7-4902" hidden="false" typeId="1dd2-2af7-76a2-2423" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Pox Rider" hidden="false" id="6150-93ca-b0e9-68f5" defaultAmount="1,2">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4062-087b-7e37-8cf7"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1c3d-9379-0e12-5459"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Yawning Maw" hidden="false" id="0b1c-bec2-eec7-f3a6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2821-d700-f0ca-49c0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b9d-d7b7-fb92-7baa"/>
+              </constraints>
+              <profiles>
+                <profile name="Yawning Maw" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="bfb8-cc47-a92c-2167">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">D3</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lashing Tongue" hidden="false" id="7ca4-c2b1-7bc6-3af1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b57-e652-992d-c891"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c457-8110-7fad-ea05"/>
+              </constraints>
+              <profiles>
+                <profile name="Lashing Tongue" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false" id="ae41-e65d-bebd-bd2e">
+                  <characteristics>
+                    <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">7&quot;</characteristic>
+                    <characteristic name="Atk" typeId="aa17-4296-2887-e05d">1</characteristic>
+                    <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+                    <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+                    <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+                    <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">D3</characteristic>
+                    <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat, Companion</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plaguesword" hidden="false" id="0529-df7f-7e7e-e1a9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e05c-b2ba-59a7-782a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="caec-3558-4a9e-be2d"/>
+              </constraints>
+              <profiles>
+                <profile name="Plaguesword" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="8b1f-b462-bc8f-9872">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">1</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Mortal)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="increment" value="3" field="4062-087b-7e37-8cf7">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="82cb-c719-dafe-9a73" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="3" field="1c3d-9379-0e12-5459">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="82cb-c719-dafe-9a73" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command Models" id="be30-c677-913d-fe1e" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6389-7a73-d59c-1f3a" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Champion" hidden="false" id="2d8e-1290-7a08-f3bc" type="selectionEntry" targetId="9c21-1746-9873-a5b5" defaultAmount="1,0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b33a-772c-7c3c-215e"/>
+                    <constraint type="max" value="1" field="selections" scope="82cb-c719-dafe-9a73" shared="true" id="376c-eba8-f0cb-db68" includeChildSelections="true"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="e51d-b1a3-75fc-dc3g" name="Age of Sigmar 4.0" revision="12" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="e51d-b1a3-75fc-dc3g" name="Age of Sigmar 4.0" revision="13" battleScribeVersion="2.03" type="gameSystem">
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="0" hidden="false"/>
     <costType name="Destiny Point Limit" id="bc33-05f5-8d3f-af43" defaultCostLimit="-1" hidden="true"/>
@@ -5986,6 +5986,7 @@ Each part of this **^^Manifestation^^** is armed with **Tendrils of Light and S
     <publication name="Github" id="e49c-34a0-4d9c-72a4" hidden="false" publisherUrl="https://github.com/BSData/age-of-sigmar-4th"/>
     <publication name="Battletome: Gloomspite Gitz" id="a395-7bc4-71eb-46df" hidden="false"/>
     <publication name="Grotmas Advent Regiments of Renown" id="fdea-639c-1111-eecc" hidden="false"/>
+    <publication name="Custom Battletome Supplement: Maggotkin of Nurgle" id="c3ad-6aa4-5bc1-53ef" hidden="false" publisherUrl="https://docs.google.com/document/d/19_eSrdTxhck0HnganFhZcX8mwu2bkmtHUMMfrHu9fO0"/>
   </publications>
   <selectionEntries>
     <selectionEntry type="upgrade" import="false" name="READ ME" hidden="false" id="eb00-fe05-1949-bed7" defaultAmount="1">
